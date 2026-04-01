@@ -1,0 +1,10 @@
+@startuml Sequence
+actor Alice
+participant Drink
+participant AliceObject as AliceObj
+Alice -> Drink : applyEffect()
+activate Drink
+Drink -> AliceObj : decrease size (size *= 0.1)
+deactivate Drink
+AliceObj -> Alice : обновить size
+@enduml

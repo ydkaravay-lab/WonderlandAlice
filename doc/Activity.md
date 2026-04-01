@@ -19,6 +19,7 @@
 | size < 10 | Доступ разрешен |
 | size ≥ 10 | Доступ запрещен |
 ## Диаграмма
+![Диаграмма активности](Activity.png)
 ```plantuml
 @startuml Activity
 start

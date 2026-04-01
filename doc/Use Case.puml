@@ -1,0 +1,9 @@
+@startuml Use Case
+actor Alice
+usecase "Съесть пирожок" as EatCake
+usecase "Выпить из пузырька" as DrinkPotion
+usecase "Пройти в дверь" as GoThroughDoor
+Alice --> EatCake
+Alice --> DrinkPotion
+Alice --> GoThroughDoor
+@enduml

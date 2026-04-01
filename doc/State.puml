@@ -1,0 +1,7 @@
+@startuml State
+[*] --> Normal
+Normal --> Tiny : size < 1
+Normal --> Giant : size > 10
+Tiny --> Normal : size >= 1
+Giant --> Normal : size <= 10
+@enduml

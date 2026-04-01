@@ -1,0 +1,17 @@
+@startuml Class
+class Alice {
+    -size: float
+    +eat(cake: Cake)
+    +drink(drink: Drink)
+}
+class Cake {
+    -scaleFactor: float = 10
+    +applyEffect(alice: Alice)
+}
+class Drink {
+    -scaleFactor: float = 0.1
+    +applyEffect(alice: Alice)
+}
+Alice "1" --> "*" Cake
+Alice "1" --> "*" Drink
+@enduml

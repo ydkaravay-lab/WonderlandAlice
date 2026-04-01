@@ -1,0 +1,11 @@
+@startuml Activity
+start
+:Потребление объекта EatMe/DrinkMe;
+:Пересчет роста Алисы;
+if (size < 10?) then (да)
+  :Можно пройти в Garden;
+else (нет)
+  :Доступ запрещен;
+endif
+stop
+@enduml
